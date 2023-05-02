@@ -1,7 +1,80 @@
-html {
-  max-width: 720px;
+.card {
+  color: red;
 }
 
-body {
-  background: #fff;
+.card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(249, 234, 34);
+  -webkit-text-stroke: 1px rgb(209, 28, 152);
+
+  direction: rtl;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  text-align: center;
+
+  letter-spacing: 1em;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  text-decoration: underline dotted red;
+}
+
+.span-b {
+	text-decoration-color: blue;
+}
+
+pre {
+	tab-size: 5;
+}
+
+* {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif, sans-serif;
+	font-size: 22px;
+	font-weight: 900;
+
+	font-display: swap;
+}
+
+span {
+	font-size: small;
+
+	font-weight: lighter;
+
+	font-style: oblique;
+}
+
+.span-b {
+	display: none;
+}
+
+.block {
+	display: block;
+	background: rgb(177, 172, 172);
+
+	margin: auto;
+
+	min-width: min-content;
+
+	max-width: 100px;
+
+	min-height: 50px;
+
+	max-height: max-content;
+
+	box-sizing: content-box;
 }
