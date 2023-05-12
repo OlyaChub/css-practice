@@ -41,33 +41,34 @@
 	{{/with}}
 </main>
 
-<div class="updates">
+<main class="main">
 	{{#with updates}}
+	<div class="updates">
+		<h2 class="updates_title">{{title}}</h2>
 
-	<h2 class="updates_title">{{title}}</h2>
-
-	{{#each list}}
-	<div class="upd_list">
-		<h3 class="nickname">{{nickname}}</h3>
-		<div class="color_block">
-			<p class="color_block_text">32x32</p>
+		{{#each list}}
+		<div class="upd_list">
+			<div class="color_block">
+				<p class="color_block_text">32x32</p>
+			</div>
+			<div class="upd_title">
+				<h3 class="nickname">@{{nickname}}</h3>
+				<p class="description">{{description}}</p>
+			</div>
 		</div>
-		<p class="description">{{description}}</p>
+		{{/each}}
+
+		{{#with show_all}}
+		<a href="{{url}}" class="updates_link">{{text}}</a>
+		{{/with}}
 	</div>
-	{{/each}}
-
-	{{#with show_all}}
-	<a href="{{url}}" class="updates_link">{{text}}</a>
 	{{/with}}
-
-	{{/with}}
-</div>
+</main>
 
 <div class="expirience">
 	{{#with expirience}}
 	<div class="exp_badge">{{badge}}</div>
 	<h2 class="exp_title">{{title}}</h2>
-	{{!-- <div class="exp_badge">{{badge}}</div> --}}
 	<div class="expir">
 		{{#each list}}
 		<div class="exp_list">
